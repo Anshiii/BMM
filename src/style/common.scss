@@ -1,0 +1,15 @@
+
+#root,.main{
+    height: 100%;
+}
+
+.main{
+    display: flex;
+    .ant-menu{
+        height: 100%;
+    }
+}
+
+.content{
+   flex:auto;
+}
