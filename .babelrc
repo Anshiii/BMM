@@ -7,9 +7,6 @@
           "libraryName": "antd",
           "libraryDirectory": "lib",   // default: lib
           "style": "css"
-        },
-        {
-          "libraryName": "antd-mobile"
         }
       ]]
     ]
