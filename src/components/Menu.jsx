@@ -31,7 +31,8 @@ class SiderMenu extends React.PureComponent {
     			defaultSelectedKeys={["1"]}
     			defaultOpenKeys={["sub1"]}
     			mode="inline"
-    			style={{ width: 360 }}
+    			theme="dark"
+    			className="sideMenu"
     		>
     			{data.children.map(item => this.subMenuItem(item))}
     		</Menu>

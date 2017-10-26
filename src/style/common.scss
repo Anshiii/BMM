@@ -8,8 +8,68 @@
     .ant-menu{
         height: 100%;
     }
+    .sideMenu{
+        width: 300px;
+        height: 100%;
+        overflow: scroll;
+        flex-shrink: 0;
+    }
 }
+
 
 .content{
    flex:auto;
+   background-color: #efefef;
+   overflow: scroll;
+   height: 100%;
+   box-sizing: border-box;
+}
+nav{
+    background-color: #cccccc;
+    height: 50px;
+    line-height: 50px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    
+    .ant-card{
+        width: 30%;
+        max-width: 340px;
+        margin: 24px 0 0 24px;
+        display: flex;
+        position: relative;
+        &:hover .card-close{
+            color: #5d5d5d;
+            &:hover{
+                color: red;
+            }
+        }
+        a{
+            color: #5d5d5d;
+            font-size: 14px;
+        }
+    }
+    .ant-card-body {
+        margin: auto 0;
+    }
+}
+
+.card{
+    
+    &-date{
+        color: darkgrey;
+        margin-top: 4px;
+    }
+    &-close{
+        transition: 0.5s;
+        color: white;
+        position: absolute;
+        display: block;
+        right: 8px;
+        top: 8px;
+        font-size: 14px;
+        cursor: pointer;
+    }
 }
